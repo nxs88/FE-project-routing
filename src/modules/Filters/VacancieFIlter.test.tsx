@@ -53,7 +53,7 @@ describe('VacancieFilter component', () => {
       <Provider store={store}>
         <MantineProvider theme={theme}>
           <MemoryRouter>
-            <VacancieFilter />;
+            <VacancieFilter resetPage={vi.fn} />;
           </MemoryRouter>
         </MantineProvider>
       </Provider>
@@ -66,7 +66,7 @@ describe('VacancieFilter component', () => {
       <Provider store={store}>
         <MantineProvider theme={theme}>
           <MemoryRouter>
-            <VacancieFilter />;
+            <VacancieFilter resetPage={vi.fn} />;
           </MemoryRouter>
         </MantineProvider>
       </Provider>
@@ -81,7 +81,7 @@ describe('VacancieFilter component', () => {
       <Provider store={store}>
         <MantineProvider theme={theme}>
           <MemoryRouter>
-            <VacancieFilter />;
+            <VacancieFilter resetPage={vi.fn} />;
           </MemoryRouter>
         </MantineProvider>
       </Provider>
@@ -94,7 +94,7 @@ describe('VacancieFilter component', () => {
       <Provider store={store}>
         <MantineProvider theme={theme}>
           <MemoryRouter>
-            <VacancieFilter />;
+            <VacancieFilter resetPage={vi.fn} />;
           </MemoryRouter>
         </MantineProvider>
       </Provider>
