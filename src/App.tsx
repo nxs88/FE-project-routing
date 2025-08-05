@@ -1,4 +1,10 @@
-import { Navigate, Route, Routes, useSearchParams } from 'react-router-dom';
+import {
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useSearchParams,
+} from 'react-router-dom';
 import { MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import './App.scss';
@@ -30,7 +36,10 @@ function App() {
 
   const [searchParams] = useSearchParams();
 
+  const location = useLocation();
+
   useEffect(() => {
+    if (location.pathname !== '/FE-project-routing/vacancies') return;
     const search = searchParams.get('search') || '';
     const cityUrl = searchParams.get('city') || 'Все города';
     const skillsUrl = searchParams.get('skills')?.split(',') || [];

@@ -14,7 +14,9 @@ export default function SingleVacanciePage({
   const vacancie = vacancies.find(
     (vacancie) => vacancie.id.toString() === params.id
   ) as Vacancie;
-
+  if (!vacancie) {
+    return;
+  }
   return (
     <div className={styles.container}>
       <div className={styles.card}>
