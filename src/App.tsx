@@ -49,7 +49,7 @@ function App() {
     dispatch(
       fetchVacancies({ search, city: cityUrl, skills: skillsUrl, page: 1 })
     );
-  }, [dispatch, searchParams]);
+  }, [dispatch, searchParams, location.pathname]);
 
   useEffect(() => {
     const load = async () => {
